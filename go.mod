@@ -1,6 +1,6 @@
 module github.com/psanford/githubip
 
-go 1.21
+go 1.23
 
 require (
 	github.com/gaissmai/cidrtree v0.5.0

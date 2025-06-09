@@ -176,7 +176,7 @@ func init() {
 {{- range .Ranges}}
 	r = IPRange{
 		Prefix: netip.MustParsePrefix("{{.Prefix}}"),
-		Service: "{{index .Services 0}}", // Primary service
+		Services: []string{ {{range .Services}}"{{.}}", {{end}}},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 {{- end}}

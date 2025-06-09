@@ -24,6 +24,6 @@ func Range(ip netip.Addr) *IPRange {
 }
 
 type IPRange struct {
-	Prefix  netip.Prefix
-	Service string
+	Prefix   netip.Prefix
+	Services []string
 }

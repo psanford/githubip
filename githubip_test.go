@@ -74,10 +74,10 @@ func ExampleRange() {
 	ip := netip.MustParseAddr("192.30.252.1")
 	r := Range(ip)
 	fmt.Println(r.Prefix)
-	fmt.Println(r.Service)
+	fmt.Println(r.Services)
 	// Output:
 	// 192.30.252.0/22
-	// api
+	// [api copilot git github_enterprise_importer hooks web]
 }
 
 func ExampleIsGithubIP() {
