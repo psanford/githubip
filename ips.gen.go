@@ -3588,6 +3588,11 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:   netip.MustParsePrefix("135.130.108.0/23"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:   netip.MustParsePrefix("135.130.12.0/23"),
 		Services: []string{"actions"},
 	}
@@ -4844,6 +4849,16 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 		Prefix:   netip.MustParsePrefix("172.193.128.0/17"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("172.194.128.0/17"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("172.199.0.0/17"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -6233,6 +6248,16 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:   netip.MustParsePrefix("20.153.105.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("20.153.106.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:   netip.MustParsePrefix("20.153.12.0/24"),
 		Services: []string{"actions"},
 	}
@@ -7463,22 +7488,7 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.100.192/28"),
-		Services: []string{"actions"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.100.208/29"),
-		Services: []string{"actions"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.100.216/30"),
-		Services: []string{"actions"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.100.220/31"),
+		Prefix:   netip.MustParsePrefix("20.20.100.192/27"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -7543,27 +7553,12 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.110.128/27"),
+		Prefix:   netip.MustParsePrefix("20.20.110.128/26"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.110.160/28"),
-		Services: []string{"actions"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.110.176/29"),
-		Services: []string{"actions"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.110.184/30"),
-		Services: []string{"actions"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.110.188/31"),
+		Prefix:   netip.MustParsePrefix("20.20.110.192/31"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -7648,7 +7643,17 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.78.48/31"),
+		Prefix:   netip.MustParsePrefix("20.20.78.48/29"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("20.20.78.56/30"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("20.20.78.60/31"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -7668,7 +7673,12 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("20.20.93.160/31"),
+		Prefix:   netip.MustParsePrefix("20.20.93.160/29"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("20.20.93.168/31"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -12658,7 +12668,7 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("2603:1030:401:8c0::/59"),
+		Prefix:   netip.MustParsePrefix("2603:1030:401:8c0::/60"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -12668,7 +12678,22 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("2603:1030:401:8e0::/60"),
+		Prefix:   netip.MustParsePrefix("2603:1030:401:8d0::/61"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1030:401:8d8::/64"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1030:401:8ea::/63"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1030:401:8ec::/62"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -13153,7 +13178,7 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("2603:1030:804:5b::/64"),
+		Prefix:   netip.MustParsePrefix("2603:1030:804:5a::/63"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -15328,6 +15353,51 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2400::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2401::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2402::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2403::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2404::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2405::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2412::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2417::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:243c::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:   netip.MustParsePrefix("2603:1063:24::/56"),
 		Services: []string{"actions"},
 	}
@@ -15338,7 +15408,142 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2600::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2601::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2602::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2603::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2604::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2605::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2612::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2617::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:263c::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2800::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2801::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2802::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2803::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2804::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2805::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2810::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2815::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:283a::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:   netip.MustParsePrefix("2603:1063:2::/56"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2a00::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2a01::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2a02::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2a03::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2a04::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2a05::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2a10::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2a15::/48"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("2603:1063:2a3a::/48"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -22013,12 +22218,147 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.130.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.131.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.132.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.133.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.134.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.135.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.146.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.151.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.18.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.186.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.2.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.23.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.3.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.4.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.5.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.58.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.6.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.212.7.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:   netip.MustParsePrefix("48.213.128.0/25"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 		Prefix:   netip.MustParsePrefix("48.213.128.128/26"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.213.18.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.213.2.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.213.23.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.213.3.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.213.4.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.213.5.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.213.56.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.213.6.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("48.213.7.0/24"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -22959,6 +23299,11 @@ func init() {
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
 		Prefix:   netip.MustParsePrefix("52.109.16.0/22"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("52.109.176.0/24"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -26248,7 +26593,12 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.1.192/26"),
+		Prefix:   netip.MustParsePrefix("57.157.1.192/27"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("57.157.1.224/31"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -26278,22 +26628,22 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.13.0/26"),
+		Prefix:   netip.MustParsePrefix("57.157.13.0/25"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.13.64/27"),
+		Prefix:   netip.MustParsePrefix("57.157.13.128/28"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.13.96/31"),
+		Prefix:   netip.MustParsePrefix("57.157.13.144/30"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.2.0/27"),
+		Prefix:   netip.MustParsePrefix("57.157.2.16/28"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -26303,27 +26653,22 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:   netip.MustParsePrefix("57.157.2.4/30"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("57.157.2.8/29"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:   netip.MustParsePrefix("57.157.28.0/25"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.28.128/28"),
-		Services: []string{"actions"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.28.144/29"),
-		Services: []string{"actions"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.28.152/30"),
-		Services: []string{"actions"},
-	}
-	cidrTbl.Insert(r.Prefix, r)
-	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.28.156/31"),
+		Prefix:   netip.MustParsePrefix("57.157.28.128/27"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
@@ -26378,12 +26723,17 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.9.112/30"),
+		Prefix:   netip.MustParsePrefix("57.157.9.112/29"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
-		Prefix:   netip.MustParsePrefix("57.157.9.116/31"),
+		Prefix:   netip.MustParsePrefix("57.157.9.120/30"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("57.157.9.124/31"),
 		Services: []string{"actions"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
