@@ -35808,8 +35808,23 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:   netip.MustParsePrefix("9.234.106.48/28"),
+		Services: []string{"hooks"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:   netip.MustParsePrefix("9.234.128.0/17"),
 		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("9.234.98.160/28"),
+		Services: []string{"hooks"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("9.234.98.176/28"),
+		Services: []string{"hooks"},
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
