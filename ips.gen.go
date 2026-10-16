@@ -18963,6 +18963,16 @@ func init() {
 	}
 	cidrTbl.Insert(r.Prefix, r)
 	r = IPRange{
+		Prefix:   netip.MustParsePrefix("3.41.210.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
+		Prefix:   netip.MustParsePrefix("3.42.157.0/24"),
+		Services: []string{"actions"},
+	}
+	cidrTbl.Insert(r.Prefix, r)
+	r = IPRange{
 		Prefix:   netip.MustParsePrefix("34.202.115.28/32"),
 		Services: []string{"actions"},
 	}
